@@ -1,13 +1,11 @@
 print('2 in 50')
 
-p = int(input('Gostaria de analisar?\n[1] Sim. [2]Não.'))
-
 s = 0
-
-if p == 1:
-    for c in range(0, 500, 3):
-        #print(c)
-        s = s + c
-        print(c, s)
-else:
-    print('Fim.')
+n = 0
+i = 0
+for c in range(1, 501, 2):
+    if c % 3 ==0:    
+        n = n + 1 # n += 1
+        s = s + c # s += c
+    i = i + 1 # n += 1
+print('A soma dos {} numeros divisivos por 3 de 0 a 500 resulta em: {}, sendo que o total de numeros impar são {}.'.format(n, s, i))

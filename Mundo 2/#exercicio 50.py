@@ -21,14 +21,17 @@ print('\n Par dos Seis.')
 
 # Somando os dados pares na lista:
 npar = []
-for n in range(0, 6):
-    z = int(input('Insira um valor: '))
+count = 0
+
+for n in range(1, 7):
+    z = int(input('Insira o {} valor: '.format(n)))
     if z % 2 == 0:
         npar.append(z)
+        count = count + 1
 
 # Apresentando dados:
 if npar:
     np = sum(npar)
-    print('Os numeros pares somados resulta: {}'.format(np))
+    print('Os {} numeros pares somados resulta: {}'.format(count, np))
 else:
     print('Nenhum numero par digitado.')

@@ -15,7 +15,7 @@ else:
 
     if c == 0: 
         print('Primo.')
-        print(divisores)
+        print(divisores, end = '')
     else:
         print('Não primo.')
         print('Divisores: {}'.format(divisores))
